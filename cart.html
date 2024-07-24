@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce/cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #s-hero {
+        background-image: url("imgs/about/banner.png");
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="header">
+      <a href="#" class="logo"><img src="imgs/logo.png" alt="" /></a>
+      <ul>
+        <li class="close"><i class="fa-solid fa-xmark"></i></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li>
+          <a href="cart.html" class="active"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="mobile">
+        <a href="cart.html" style="color: var(--main-color)"
+          ><i class="fa-solid fa-bag-shopping"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </nav>
+
+    <section id="s-hero">
+      <h2>#cart</h2>
+      <p>Add coupon cod & Save upto 70%!</p>
+    </section>
+
+    <section id="cart">
+      <table>
+        <thead>
+          <tr>
+            <td>remove</td>
+            <td>image</td>
+            <td>product</td>
+            <td>price</td>
+            <td>quantity</td>
+            <td>subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fa-solid fa-trash"></i></td>
+            <td><img src="imgs/products/f3.jpg" alt="" width="70px" /></td>
+            <td>Cartoon T-Shirt</td>
+            <td>$98.99</td>
+            <td>
+              <input type="number" value="1" min="1" max="20" />
+            </td>
+            <td class="subtotal"></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-trash"></i></td>
+            <td><img src="imgs/products/f6.jpg" alt="" width="70px" /></td>
+            <td>Cartoon T-Shirt</td>
+            <td>$98.99</td>
+            <td>
+              <input type="number" value="1" min="1" max="20" />
+            </td>
+            <td class="subtotal"></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-trash"></i></td>
+            <td><img src="imgs/products/f8.jpg" alt="" width="70px" /></td>
+            <td>Cartoon T-Shirt</td>
+            <td>$98.99</td>
+            <td>
+              <input type="number" value="1" min="1" max="20" />
+            </td>
+            <td class="subtotal"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="coupon">
+      <div class="add-co">
+        <h4>Applay Coupon</h4>
+        <input id="co" type="text" placeholder="Entert Your Coupo " />
+        <button class="normal" id="apply-co">Apply</button>
+      </div>
+      <div class="total">
+        <h4>Cart Totals</h4>
+        <table border="">
+          <tr>
+            <td>Cart Subtotal</td>
+            <td id="allTotal"></td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr id="if-co">
+            <td>Coupon Discound</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <th id="afterdis"></th>
+          </tr>
+        </table>
+        <button class="normal">Proceed To Check</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="col">
+          <img src="imgs/logo.png" alt="" />
+          <h4>Contact</h4>
+          <p><strong>Adress: </strong>Epypt, Mansoura city</p>
+          <p><strong>Adress: </strong>+20 15 5058 7118</p>
+          <p><strong>Adress: </strong>8:00 - 16:00. Sun - Thu</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="about.html">About Us</a>
+          <a href="#">Dlivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Term & Condtions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="cart.html">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store Or Google Play</p>
+          <img src="imgs/pay/app.jpg" alt="" />
+          <img src="imgs/pay/play.jpg" alt="" />
+          <p>Secured Payment Gateways</p>
+          <img src="imgs/pay/pay.png" alt="" />
+        </div>
+      </div>
+      <p class="copy">
+        @2024 created by Waleed Elshafey
+        <a
+          href=""
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href=""
+          ><i class="fab fa-github"></i
+        ></a>
+      </p>
+    </footer>
+
+    <script>
+      const remove = document.querySelectorAll("tbody td:nth-child(1) i");
+      const tbody = document.querySelector("tbody");
+      const quantity = document.querySelectorAll("tbody td:nth-child(4) ");
+      const subtotals = document.querySelectorAll(".subtotal");
+      const inputs = document.querySelectorAll("#cart input");
+      const allTotal = document.getElementById("allTotal");
+      const apply = document.getElementById("apply-co");
+      const coupon = document.getElementById("co");
+      const afterdis = document.getElementById("afterdis");
+      const ifco = document.getElementById("if-co");
+      remove.forEach((ele) => {
+        ele.addEventListener("click", () => {
+          ele.parentElement.parentElement.remove();
+          price();
+        });
+      });
+      function price() {
+        const quantity = document.querySelectorAll("tbody td:nth-child(4)");
+        const subtotals = document.querySelectorAll(".subtotal");
+        const inputs = document.querySelectorAll("#cart input");
+        let totals = 0;
+        for (let i = 0; i < inputs.length; i++) {
+          let x =
+            parseFloat(quantity[i].innerHTML.slice(1)) *
+            parseFloat(inputs[i].value);
+          subtotals[i].innerHTML = "$" + x.toFixed(2);
+          totals += x;
+        }
+        allTotal.innerHTML = "$" + totals.toFixed(2);
+        if (co.value === "amar2358" || co.value === "nerm2222") {
+          ifco.style.display = "contents";
+          let z = parseFloat(allTotal.innerHTML.slice(1)) * (70 / 100);
+          afterdis.innerHTML = "$" + z.toFixed(2);
+        } else {
+          afterdis.innerHTML = allTotal.innerHTML;
+        }
+      }
+      price();
+      inputs.forEach((ele) => {
+        ele.addEventListener("change", price);
+      });
+      function dis() {
+        apply.onclick = () => {
+          if (co.value === "amar2358" || co.value === "nerm2222") {
+            ifco.style.display = "contents";
+            let z = parseFloat(allTotal.innerHTML.slice(1)) * (70 / 100);
+            afterdis.innerHTML = "$" + z.toFixed(2);
+          } else {
+            afterdis.innerHTML = allTotal.innerHTML;
+          }
+        };
+      }
+      dis();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

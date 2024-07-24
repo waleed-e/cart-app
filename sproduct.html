@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce/sproduct</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="header">
+      <a href="#" class="logo"><img src="imgs/logo.png" alt="" /></a>
+      <ul>
+        <li class="close"><i class="fa-solid fa-xmark"></i></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li>
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </li>
+      </ul>
+      <div class="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </nav>
+
+    <section id="prodetails">
+      <div class="left">
+        <img src="imgs/products/f1.jpg" alt="" class="big" />
+        <div class="smalls">
+          <img src="imgs/products/f1.jpg" alt="" class="small" />
+          <img src="imgs/products/f2.jpg" alt="" class="small" />
+          <img src="imgs/products/f3.jpg" alt="" class="small" />
+          <img src="imgs/products/f4.jpg" alt="" class="small" />
+        </div>
+      </div>
+      <div class="right">
+        <h6>Home T-Shirt</h6>
+        <h4>Men's Fashion T Shirt</h4>
+        <h2>$99</h2>
+        <select>
+          <option>select size</option>
+          <option>small</option>
+          <option>large</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+        <div class="confirm">
+          <input type="number" value="1" max="30" min="1" />
+          <button class="normal">Add To Cart</button>
+        </div>
+        <h4>Product Details</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          commodi nihil quos provident in ut! Quam suscipit esse quisquam
+          voluptatibus tempora qui mollitia porro maxime ullam perspiciatis
+          delectus, ex rerum. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Suscipit voluptate non quibusdam laudantium quo incidunt nemo,
+          iusto, aliquid rem sed tempora ullam delectus velit odit rerum dolor
+          itaque nostrum error?
+        </p>
+      </div>
+    </section>
+
+    <section id="featured-products">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Moder Design</p>
+      <div class="container">
+        <div class="card">
+          <img src="imgs/products/f1.jpg" alt="" />
+          <div class="details">
+            <p>adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <h4>$78</h4>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imgs/products/f2.jpg" alt="" />
+          <div class="details">
+            <p>adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <h4>$78</h4>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imgs/products/f3.jpg" alt="" />
+          <div class="details">
+            <p>adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <h4>$78</h4>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imgs/products/f4.jpg" alt="" />
+          <div class="details">
+            <p>adidas</p>
+            <h4>Cartoon Astronaut T-Shirts</h4>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <h4>$78</h4>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const bigImg = document.querySelector("#prodetails .left .big");
+      const smallImgs = document.querySelectorAll("#prodetails .left .small");
+
+      smallImgs.forEach((ele) => {
+        ele.addEventListener("click", () => {
+          bigImg.src = ele.src;
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
